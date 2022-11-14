@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfie Generator</title>
+    <script src="./style.css"></script>
+    <script src="./index.umd.js"></script>
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./cropper.css">
+</head>
+<body>
+    <div class="container" style="">
+
+        <div class="row">
+
+			<div class="col-md-12">
+
+				<div class="py-0 text-center">
+					<h2 style="background: #f26212" class=" rounded text-light pb-2 pt-2">Selfie Maker</h2>
+				</div>
+				
+				
+				
+				<div class="row">
+
+		            <div class="col-md-2 order-md-3 mb-4"> </div>
+					<div class="col-md-2 order-md-1 mb-4"></div>
+
+		            <div class="col-md-8 order-md-2">
+						<form method="POST" id="selfie_form">
+
+		                    <div class="row">
+								<div class="col-md-6 offset-md-3">
+									<label class="form-label">Select Your Photo</label>
+									<div class="imageUploader">
+										<div class="user_pic_container_box">
+											<img data-type="circle" data-width="330" data-height="330" class='user_pic_container' src='./profile_pic.png'/>
+										</div>
+										<a class="imgremovebtn" href="#">X</a>
+										<input readonly style="display: none" id='file_browse' type="file" accept="image/*" required="required">
+										<input type="hidden" name="profile_img" class="value_container" value="nochange" />
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="name">Your Name</label>
+		                            <input type="text" class="form-control" name="name" id="name" value="" required="">
+		                        </div>
+		                    </div>
+							<!--
+							<div class="row">
+								<div class="col-md-6 mb-3 offset-md-3">
+		                            <label for="name">Show Date</label>
+		                            <select class="form-control" name="show" id="show" required="">
+										<option value="11.jpeg">27-Aug-Ahmedabad</option>
+										<option value="12.png">28-Aug-Bhuj</option>
+										<option value="13.png">28-Aug-Bhuj</option>
+									</select>
+		                        </div>
+		                    </div>
+							-->
+							
+							<hr class="mb-4">
+
+		                    <div class="row">
+								<div class="col-md-6 mb-4">
+									<button type="submit" name="index" value="0" class="btn btn-lg btn-block downloadbtn text-white" style="background-color: #df7220;">Download Status Size</button>
+								</div>
+								<div class="col-md-6 mb-4">
+									<button type="submit" name="index" value="1" class="btn btn-lg btn-block downloadbtn text-white" style="background-color: #df7220;">Download Story Size</button>
+								</div>
+								
+							</div>
+		                    
+		                </form>
+		            </div>
+
+	        	</div>
+
+			</div>
+			
+			<div class="col-md-12">
+				<hr class="mb-1 mt-4">
+			</div>
+		</div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="./cropper.js"></script>
+        <script src="./image.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>

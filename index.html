@@ -7,6 +7,12 @@
     <title>Selfie Generator</title>
     <script src="./style.css"></script>
     <script src="./index.umd.js"></script>
+	<style>
+		@font-face {
+    font-family: 'baloobhai';
+    src: url('BalooBhai2-Medium.ttf');
+}
+	</style>
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="./cropper.css">
@@ -37,7 +43,7 @@
 									<label class="form-label">Select Your Photo</label>
 									<div class="imageUploader">
 										<div class="user_pic_container_box">
-											<img data-type="circle" data-width="330" data-height="330" class='user_pic_container' src='./profile_pic.png'/>
+											<img data-type="circle" data-width="430" data-height="430" class='user_pic_container' src='./profile_pic.png'/>
 										</div>
 										<a class="imgremovebtn" href="#">X</a>
 										<input readonly style="display: none" id='file_browse' type="file" accept="image/*" required="required">
